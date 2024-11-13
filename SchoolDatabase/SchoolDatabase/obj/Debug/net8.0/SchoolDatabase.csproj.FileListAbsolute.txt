@@ -28,3 +28,4 @@ D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDatabase.pdb
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDatabase.genruntimeconfig.cache
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\ref\SchoolDatabase.dll
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDatabase.sourcelink.json
