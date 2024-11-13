@@ -34,12 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/Teacher/List.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxMaXN0LmNzaHRtbA==
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/TeacherPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/Teacher/Show.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxTaG93LmNzaHRtbA==
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/TeacherPage/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclBhZ2VcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/_ViewImports.cshtml]

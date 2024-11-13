@@ -1,15 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 
 namespace SchoolDatabase.Controllers
 {
-    public class TeacherController : Controller
+    public class TeacherPageController : Controller
     {
         public IActionResult Show()
         {
-            return View();
+            return View(); 
         }
         public IActionResult List()
         {
+         
             return View();
         }
     }
