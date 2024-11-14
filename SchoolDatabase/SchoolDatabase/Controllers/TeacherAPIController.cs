@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace SchoolDatabase.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Teacher")]
     [ApiController]
     public class TeacherAPIController : ControllerBase
     {
@@ -18,21 +18,13 @@ namespace SchoolDatabase.Controllers
         {
             _context = context;
         }
-        /// <summary>
-        /// Returns a list of Authors in the system. If a search key is included, search for authors with a first or last name matching.
-        /// </summary>
-        /// <example>
-        /// GET api/Author/ListAuthors?SearchKey=Sam -> [{"AuthorId":1,"AuthorFname":"Sam", "AuthorLName":"Smith"},{"AuthorId":2,"AuthorFname":"Jillian", "AuthorLName":"Samuel"},..]
-        /// </example>
-        /// <returns>
-        /// A list of author objects 
-        /// </returns>
+      
         [HttpGet]
         [Route(template: "ListTeachers")]
-        public List<Teacher> ListTeachers(string SearchKey = null)
+        public List<Teacher> ListTeachers()
         {
 
-            // Create an empty list of Authors
+            // Create an empty list of Teachers
             List<Teacher> Teachers = new List<Teacher>();
 
             // 'using' will close the connection after the code executes
@@ -43,14 +35,8 @@ namespace SchoolDatabase.Controllers
                 MySqlCommand Command = Connection.CreateCommand();
 
 
-                string query = "select * from Teachers";
+                string query = "select * from teachers";
 
-                // search criteria, first, last or first + last
-                if (SearchKey != null)
-                {
-                    query += " where lower(teacherfname) like @key or lower(authorlname) like @key or lower(concat(teacherfname,' ',teacherlname)) like @key";
-                    Command.Parameters.AddWithValue("@key", $"%{SearchKey}%");
-                }
                 //SQL QUERY
                 Command.CommandText = query;
                 Command.Prepare();
@@ -88,7 +74,7 @@ namespace SchoolDatabase.Controllers
             }
 
 
-            //Return the final list of authors
+            //Return the final list of teacher
             return Teachers;
         }
 
@@ -106,7 +92,7 @@ namespace SchoolDatabase.Controllers
         public Teacher FindTeacher(int id)
         {
 
-            //Empty Author
+            //Empty Teacher
             Teacher SelectedTeacher = new Teacher();
 
             // 'using' will close the connection after the code executes
@@ -119,7 +105,7 @@ namespace SchoolDatabase.Controllers
                 // @id is replaced with a sanitized id
                 // 'how many' 'articles' <> count(articleid)
                 // 'for each' 'author' <> group by (authorid)
-                Command.CommandText = "select teacher.*, count(.teacherid) as numarticles from authors left join articles on (articles.authorid=authors.authorid) where authors.authorid=@id group by authors.authorid";
+                Command.CommandText = "SELECT * FROM teachers";
                 Command.Parameters.AddWithValue("@id", id);
 
                 // Gather Result Set of Query into a variable

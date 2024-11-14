@@ -1,13 +1,21 @@
-﻿@{
-    ViewData["Title"] = "List";
-}
-<p>This page should show teacher list</p>
+﻿@model IEnumerable<SchoolDatabase.Models.Teacher>
+
+<h1>List</h1>
 
 <form method="GET" action="/TeacherPage/List">
     <div>
         <input type="text" name="SearchKey" />
-        <input type="submit" value="Search" />
+        <input id="searchBtn" type="submit" value="Search" />
     </div>
+
+    <script>
+        var form = document.getElementById('searchBtn');
+
+
+    </script>
+
+
+
 </form>
 
 @foreach (SchoolDatabase.Models.Teacher Teacher in Model)

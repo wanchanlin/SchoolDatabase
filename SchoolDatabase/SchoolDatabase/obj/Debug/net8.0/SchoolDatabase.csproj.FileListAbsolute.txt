@@ -48,3 +48,8 @@ D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDatabase.csproj.AssemblyReference.cache
 D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDa.3156BA6C.Up2Date
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase\obj\Debug\net8.0\SchoolDatabase.MvcApplicationPartsAssemblyInfo.cs

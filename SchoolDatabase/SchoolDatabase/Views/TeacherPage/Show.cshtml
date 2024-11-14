@@ -1,11 +1,5 @@
-﻿@{
-    ViewData["Title"] = "Show";
-}
-<p>Show</p>
-
-@foreach (SchoolDatabase.Models.Teacher Teacher in Model)
-{
-    <div>
-        <a href="/TeacherPage/Show/Teacher.">@Teacher.teacherfname @Teacher.teacherlname</a>
-    </div>
-}
+﻿@model SchoolDatabase.Models.Teacher
+<h1>@Model.teacherfname @Model.teacherlname</h1>
+<p>Empoly Number: @Model.employeenumber</p>
+<p>Hire Date: @Model.hiredate.ToString("yyyy-M-d")</p>
+<p>Salary:@Model.salary.ToString()</p>

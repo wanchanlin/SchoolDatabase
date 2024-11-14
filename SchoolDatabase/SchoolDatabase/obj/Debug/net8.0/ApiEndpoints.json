@@ -2,7 +2,7 @@
   {
     "ContainingType": "SchoolDatabase.Controllers.TeacherAPIController",
     "Method": "FindTeacher",
-    "RelativePath": "api/TeacherAPI/FindTeacher/{id}",
+    "RelativePath": "api/Teacher/FindTeacher/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -28,17 +28,11 @@
   {
     "ContainingType": "SchoolDatabase.Controllers.TeacherAPIController",
     "Method": "ListTeachers",
-    "RelativePath": "api/TeacherAPI/ListTeachers",
+    "RelativePath": "api/Teacher/ListTeachers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "SearchKey",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[SchoolDatabase.Models.Teacher, SchoolDatabase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
