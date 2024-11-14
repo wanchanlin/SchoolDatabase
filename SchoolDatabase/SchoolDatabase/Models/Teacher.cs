@@ -6,7 +6,9 @@
 
         public string? teacherfname { get; set; }
 
-        public int employeenumber { get; set; }
+        public string? teacherlname { get; set; }
+
+        public string? employeenumber { get; set; }
 
         public DateTime hiredate { get; set; }
 

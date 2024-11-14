@@ -2,3 +2,17 @@
     ViewData["Title"] = "List";
 }
 <p>This page should show teacher list</p>
+
+<form method="GET" action="/TeacherPage/List">
+    <div>
+        <input type="text" name="SearchKey" />
+        <input type="submit" value="Search" />
+    </div>
+</form>
+
+@foreach (SchoolDatabase.Models.Teacher Teacher in Model)
+{
+    <div>
+        <a href="/TeacherPage/Show/@Teacher.teacherid">@Teacher.teacherfname @Teacher.teacherlname</a>
+    </div>
+}

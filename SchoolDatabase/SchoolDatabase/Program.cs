@@ -1,7 +1,16 @@
+using SchoolDatabase.Models;
+using SchoolDatabase.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Database
+builder.Services.AddScoped<SchoolDbContext>();
+// API for now, but should be added as separate Author Service
+builder.Services.AddScoped<TeacherAPIController>();
+
 
 var app = builder.Build();
 

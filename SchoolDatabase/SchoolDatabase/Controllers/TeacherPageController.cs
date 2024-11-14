@@ -1,18 +1,28 @@
 ﻿
+using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Mvc;
+using SchoolDatabase.Models;
 
 namespace SchoolDatabase.Controllers
 {
+
     public class TeacherPageController : Controller
     {
+        TeacherAPIController _api;
+
+        public TeacherPageController(TeacherAPIController api)
+        {
+            _api = api;
+        }
         public IActionResult Show()
         {
-            return View(); 
+            List<Teacher> Teachers = _api.ListTeachers();
+            return View(Teachers); 
         }
-        public IActionResult List()
+        public IActionResult List(int id)
         {
-         
-            return View();
+            Teacher SelectedTeacher = _api.FindTeacher(id);
+            return View(SelectedTeacher);
         }
     }
 }

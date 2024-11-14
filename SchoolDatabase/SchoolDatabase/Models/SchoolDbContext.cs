@@ -3,8 +3,6 @@ namespace SchoolDatabase.Models
 {
     public class SchoolDbContext
     {
-        public class SchoolDb
-        {
             //These are readonly "secret" properties.
             //Only the BlogDbContext class can use them.
             //Change these to match your own local blog database!
@@ -33,13 +31,11 @@ namespace SchoolDatabase.Models
 
             public MySqlConnection AccessDatabase()
             {
-                //We are instantiating the MySqlConnection Class to create an object
-                //the object is a specific connection to our blog database on port 3307 of localhost
+     
                 return new MySqlConnection(ConnectionString);
             }
 
 
 
-        }
     }
 }
