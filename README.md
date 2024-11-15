@@ -1,5 +1,5 @@
 <h1>ASP.NET Core Teacher Application</h1>
-<hr>
+
 An ASP.NET Core project demonstrating a teacher management application with a search feature using parameterized SQL queries.
 
 Overview
