@@ -6,57 +6,55 @@ using MySql.Data.MySqlClient;
 
 
 namespace SchoolDatabase.Controllers
-{
+{   
+    // API controller to manage teacher data in the school database
     [Route("api/Teacher")]
     [ApiController]
     public class TeacherAPIController : ControllerBase
     {
+        // Dependency injection of the database context
         private readonly SchoolDbContext _context;
-
-        // dependency injection of database context
+        
         public TeacherAPIController(SchoolDbContext context)
         {
             _context = context;
         }
-
-     
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route(template: "ListTeachers")]
-        public List<Teacher> ListTeachers()
+        public List<Teacher> ListTeachers(string SearchKey=null)
         {
-
-            // Create an empty list of Teachers
+            // Initialize an empty list to hold teacher data
             List<Teacher> Teachers = new List<Teacher>();
 
             // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
-                //Establish a new command (query) for our database
+                // SQL query to select all teachers
                 MySqlCommand Command = Connection.CreateCommand();
-
-
                 string query = "select * from teachers";
 
-
-                //if (SearchKey != null)
-                //{
-                //    query += " where lower(teacherfname) like @key or lower(teacherlname) like @key or lower(concat(teacherfname,' ',alname)) like @key";
-                //    Command.Parameters.AddWithValue("@key", $"%{SearchKey}%");
-                //}
+                if (SearchKey != null)
+                {
+                    query += " where hiredate like @key ";
+                    Command.Parameters.AddWithValue("@key", $"%{SearchKey}%");
+                }
 
                 //SQL QUERY
                 Command.CommandText = query;
                 Command.Prepare();
 
-                // Gather Result Set of Query into a variable
+                // Execute the query and read each teacher record
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-                    //Loop Through Each Row the Result Setteacherfname
+                    // Map each database column to the Teacher object's properties
                     while (ResultSet.Read())
                     {
-                        //Access Column information by the DB column name as an index
+                        // Map each database column to the Teacher object's properties
                         int Id = Convert.ToInt32(ResultSet["teacherid"]);
                         string FirstName = ResultSet["teacherfname"].ToString();
                         string LastName = ResultSet["teacherlname"].ToString();
@@ -65,7 +63,7 @@ namespace SchoolDatabase.Controllers
                         decimal Salary = Convert.ToDecimal(ResultSet["salary"]);
 
 
-                        //short form for setting all properties while creating the object
+                        // Create and populate a Teacher object with the data
                         Teacher CurrentTeacher = new Teacher()
                         {
                             teacherid = Id,
@@ -75,53 +73,44 @@ namespace SchoolDatabase.Controllers
                             hiredate = HireDate,
                             salary = Salary
                         };
-
+                        // Add the teacher to the list
                         Teachers.Add(CurrentTeacher);
 
                     }
                 }
             }
-
-
-            //Return the final list of teacher
+            // Return the full list of teachers
             return Teachers;
         }
      
-        /// <summary>
-        /// Returns an author in the database by their ID
-        /// </summary>
-        /// <example>
-        /// GET api/Author/FindAuthor/3 -> {"AuthorId":3,"AuthorFname":"Sam","AuthorLName":"Cooper","AuthorJoinDate":"2020-10-11", "AuthorBio":"Fun Guy", "NumArticles":1}
-        /// </example>
-        /// <returns>
-        /// A matching author object by its ID. Empty object if Author not found
-        /// </returns>
+         /// <summary>
+         /// 
+         /// </summary>
+         /// <param name="id"></param>
+         /// <returns></returns>
         [HttpGet]
         [Route(template: "FindTeacher/{id}")]
         public Teacher FindTeacher(int id)
         {
-
-            //Empty Teacher
+            // Initialize an empty Teacher object to hold the result
             Teacher SelectedTeacher = new Teacher();
 
-            // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
-                //Establish a new command (query) for our database
-                MySqlCommand Command = Connection.CreateCommand();
 
-                
+                // Initialize an empty Teacher object to hold the result
+                MySqlCommand Command = Connection.CreateCommand();
                 Command.CommandText = "SELECT * FROM teachers where teacherid = " + id;
                 Command.Parameters.AddWithValue("@id", id);
 
-                // Gather Result Set of Query into a variable
+                // Open the database connection to retrieve the teacher by ID
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-                    //Loop Through Each Row the Result Set
+
                     while (ResultSet.Read())
                     {
-                        //Access Column information by the DB column name as an index
+                        // Map database columns to the SelectedTeacher object's properties
                         int Id = Convert.ToInt32(ResultSet["teacherid"]);
                         string FirstName = ResultSet["teacherfname"].ToString();
                         string LastName = ResultSet["teacherlname"].ToString();
@@ -130,20 +119,17 @@ namespace SchoolDatabase.Controllers
                         decimal Salary = Convert.ToDecimal(ResultSet["salary"]);
 
 
-
+                        // Assign data to the SelectedTeacher object
                         SelectedTeacher.teacherid = Id;
                         SelectedTeacher.teacherfname = FirstName;
                         SelectedTeacher.teacherlname = LastName;
                         SelectedTeacher.employeenumber = EmployeeNumber;
                         SelectedTeacher.hiredate = HireDate;
                         SelectedTeacher.salary = Salary;
-
-                       
-
                     }
-                    return SelectedTeacher;
                 }
-            }
+            } // Return the found teacher or an empty object if not found
+            return SelectedTeacher;
         }
     }
 }

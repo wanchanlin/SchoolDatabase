@@ -1,16 +1,84 @@
 ﻿@model IEnumerable<SchoolDatabase.Models.Teacher>
 
-<h1>Teachers</h1>
+<style>
+    body {
+        background: #1111;
+        
+        }
 
+    .card {
+        background-color:#FFFFFF;
+        padding: 1em 1em;
+        margin:1em  0;
+        border-radius:.75em;
+    }
+
+    a {
+        color:#111111;
+        text-decoration: none;
+    }
+</style>
+
+<h1>Teachers</h1>
+<p>Search for a Teacher by their Hire Date</p>
 <form method="GET" action="/TeacherPage/List">
     <div>
-        <input type="text" name="SearchKey" />
-        <input id="searchBtn" type="submit" value="Search" />
+        <input id="searchInfo" type="text" name="SearchKey" />
+        <input id="SearchBtn" type="submit" value="Search" />
     </div>
+    <!-- Error message container -->
+    <p id="errorMessage" style="color: red; display: none;"></p>
+   
+    <p id="errorMessageDate" style="color: red; display: none;">Please follow the format YYYY-MM-DD</p>
+      <script>
 
-    <script>
-        var form = document.getElementById('searchBtn');
-    </script>
+
+          // //List of teacher names
+          // const teacherNames = [
+          //     "Alexander Bennett",
+          //     "Caitlin Cummings",
+          //     "Linda Chan",
+          //     "Lauren Smith",
+          //     "Jessica Morris",
+          //     "Thomas Hawkins",
+          //     "Shannon Barton",
+          //     "Dana Ford",
+          //     "Cody Holland",
+          //     "John Taram"
+          // ];
+
+          // //Listen for the form's submit event
+          // document.getElementById('SearchBtn').addEventListener('click', function (event) {
+          //     var searchInfo = document.getElementById('searchInfo').value.trim();
+          //     var errorMessage = document.getElementById('errorMessage');
+
+          //     Check if the input name exists in the teacherNames array
+          //     if (!teacherNames.includes(searchInfo)) {
+          //         event.preventDefault();  Prevent form submission if name is not found
+          //         errorMessage.textContent = "Teacher not found. Please check the name and try again.";
+          //         errorMessage.style.display = "block";
+          //     } else {
+          //         errorMessage.style.display = "none"; Hide error message if name is valid
+          //     }
+          // });
+
+        // Listen for the form's submit event
+        // document.getElementById('SearchBtn').addEventListener('click', function (event) {
+        //     var searchInfo = document.getElementById('searchInfo').value;
+        //     var errorMessage = document.getElementById('errorMessageDate');
+
+        //     Regex to match the format yyyy-M-d
+        //     var datePattern = /^\d{4}-\d{1,2}-\d{1,2}$/;
+
+        //     if (!datePattern.test(searchInfo)) {
+        //         event.preventDefault();  Prevents form submission if format is incorrect
+        //         errorMessage.style.display = "block";
+        //     } else {
+        //         errorMessage.style.display = "none"; Hide error message if format is correct
+        //     }
+        // });
+
+      </script>
 
 
 
@@ -18,7 +86,7 @@
 
 @foreach (SchoolDatabase.Models.Teacher Teacher in Model)
 {
-    <div>
-        <a href="/TeacherPage/Show/@Teacher.teacherid">@Teacher.teacherfname @Teacher.teacherlname</a>
+    <div class="card">
+        <a href="/TeacherPage/Show/@Teacher.teacherid">@Teacher.teacherfname @Teacher.teacherlname  &#8599;</a>
     </div>
 }
