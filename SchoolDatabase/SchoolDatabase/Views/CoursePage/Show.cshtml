@@ -1,0 +1,24 @@
+﻿@model SchoolDatabase.Models.Course
+
+<Style>
+    body{
+        background:#1111;
+    }
+
+
+
+
+    .card{
+            background: #ffffff;
+            padding:16px;
+            border-radius:20px;
+    }
+
+
+</Style>
+<div class="card">
+    <h1>@Model.coursename @Model.coursecode</h1>
+    <hr>
+    <p>Start Date: @Model.startdate.ToString("yyyy-M-d")</p>
+    <p>Finish Date: @Model.finishdate.ToString("yyyy-M-d")</p>
+</div>

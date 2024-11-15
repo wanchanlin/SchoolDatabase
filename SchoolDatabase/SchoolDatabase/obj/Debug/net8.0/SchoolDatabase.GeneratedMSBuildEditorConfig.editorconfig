@@ -18,8 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxJbmRleC5jc2h0bWw=
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/Home/Index.cshtml]

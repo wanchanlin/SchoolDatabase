@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\SchoolDatabase",
     "\\SchoolDatabase\\SchoolDatabase",
     "\\SchoolDatabase\\SchoolDatabase\\Controllers",
     "\\SchoolDatabase\\SchoolDatabase\\Models",
     "\\SchoolDatabase\\SchoolDatabase\\obj",
     "\\SchoolDatabase\\SchoolDatabase\\Views",
+    "\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage",
     "\\SchoolDatabase\\SchoolDatabase\\Views\\Shared",
     "\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage"
   ],
-  "SelectedNode": "\\SchoolDatabase\\SchoolDatabase\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\SchoolDatabase\\SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
