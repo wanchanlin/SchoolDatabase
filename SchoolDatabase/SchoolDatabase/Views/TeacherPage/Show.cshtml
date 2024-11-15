@@ -1,5 +1,25 @@
 ﻿@model SchoolDatabase.Models.Teacher
+
+<Style>
+body{
+    background:#1111;
+}
+
+    table, th, td {
+        border: 1px solid;
+        background: #ffffff;
+    }
+.card{
+        background: #ffffff;
+        padding:16px;
+        border-radius:20px;
+}
+        
+</Style>
+<div class="card">
 <h1>@Model.teacherfname @Model.teacherlname</h1>
+<hr>
 <p>Empoly Number: @Model.employeenumber</p>
 <p>Hire Date: @Model.hiredate.ToString("yyyy-M-d")</p>
 <p>Salary:@Model.salary.ToString()</p>
+</div>

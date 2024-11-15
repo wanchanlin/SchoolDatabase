@@ -18,7 +18,9 @@ namespace SchoolDatabase.Controllers
         {
             _context = context;
         }
-      
+
+     
+
         [HttpGet]
         [Route(template: "ListTeachers")]
         public List<Teacher> ListTeachers()
@@ -36,6 +38,13 @@ namespace SchoolDatabase.Controllers
 
 
                 string query = "select * from teachers";
+
+
+                //if (SearchKey != null)
+                //{
+                //    query += " where lower(teacherfname) like @key or lower(teacherlname) like @key or lower(concat(teacherfname,' ',alname)) like @key";
+                //    Command.Parameters.AddWithValue("@key", $"%{SearchKey}%");
+                //}
 
                 //SQL QUERY
                 Command.CommandText = query;
@@ -77,7 +86,7 @@ namespace SchoolDatabase.Controllers
             //Return the final list of teacher
             return Teachers;
         }
-
+     
         /// <summary>
         /// Returns an author in the database by their ID
         /// </summary>
@@ -102,10 +111,8 @@ namespace SchoolDatabase.Controllers
                 //Establish a new command (query) for our database
                 MySqlCommand Command = Connection.CreateCommand();
 
-                // @id is replaced with a sanitized id
-                // 'how many' 'articles' <> count(articleid)
-                // 'for each' 'author' <> group by (authorid)
-                Command.CommandText = "SELECT * FROM teachers";
+                
+                Command.CommandText = "SELECT * FROM teachers where teacherid = " + id;
                 Command.Parameters.AddWithValue("@id", id);
 
                 // Gather Result Set of Query into a variable
