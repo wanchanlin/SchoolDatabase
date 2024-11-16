@@ -5,7 +5,9 @@ using System;
 using MySql.Data.MySqlClient;
 
 namespace SchoolDatabase.Controllers
-{
+{   /// <summary>
+    /// 
+    /// </summary>
     // API controller to manage student data in the school database
     [Route("api/Student")]
     [ApiController]
@@ -69,7 +71,11 @@ namespace SchoolDatabase.Controllers
             // Return the full list of students
             return Students;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route(template: "FindStudent/{id}")]
         public Student FindStudent(int id)
@@ -94,7 +100,7 @@ namespace SchoolDatabase.Controllers
                         string FirstName = ResultSet["studentfname"].ToString();
                         string LastName = ResultSet["studentlname"].ToString();
                         string StudentNumber = ResultSet["studentnumber"].ToString();
-                        DateTime EnrollmentDate = Convert.ToDateTime(ResultSet["enrollmentdate"]);
+                        DateTime EnrollmentDate = Convert.ToDateTime(ResultSet["enroldate"]);
                
 
                         // Assign data to the SelectedStudent object

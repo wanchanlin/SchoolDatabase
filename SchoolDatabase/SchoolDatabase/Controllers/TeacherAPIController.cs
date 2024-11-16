@@ -20,9 +20,11 @@ namespace SchoolDatabase.Controllers
             _context = context;
         }
         /// <summary>
-        /// 
+        /// Retrieves a list of teachers from the database. Optionally filters teachers based on their hire date.
         /// </summary>
-        /// <returns></returns>
+        /// <param name="SearchKey">An optional parameter used to filter teachers by hire date. If provided, only teachers
+        /// whose hire dates contain this search term will be returned.</param>
+        /// <returns>A list of <see cref="Teacher"/> objects representing the teachers in the database.</returns>
         [HttpGet]
         [Route(template: "ListTeachers")]
         public List<Teacher> ListTeachers(string SearchKey=null)
@@ -82,12 +84,11 @@ namespace SchoolDatabase.Controllers
             // Return the full list of teachers
             return Teachers;
         }
-     
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="id"></param>
-         /// <returns></returns>
+        /// <summary>
+        /// Retrieves a teacher's details from the database based on the specified teacher ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the teacher to retrieve.</param>
+        /// <returns>A <see cref="Teacher"/> object representing the teacher with the specified ID, or an empty <see cref="Teacher"/> object if no match is found.</returns>
         [HttpGet]
         [Route(template: "FindTeacher/{id}")]
         public Teacher FindTeacher(int id)
