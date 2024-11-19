@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\studentpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\studentpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\studentpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\Home\\Index.cshtml",
@@ -83,12 +83,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-15T13:00:35.292Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TeacherAPIController.cs",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherAPIController.cs",
               "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
@@ -102,33 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentPageController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T20:57:44.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentAPIController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAASwE0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:09:41.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\HomeController.cs",
@@ -140,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TeacherPageController.cs",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherPageController.cs",
               "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
@@ -148,12 +121,49 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:06:16.159Z",
+              "WhenOpened": "2024-11-13T01:06:16.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Program.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
+              "RelativeToolTip": "SchoolDatabase\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:24:05.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "StudentAPIController.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
+              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:09:41.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentPageController.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentPageController.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
+              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentPageController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:57:44.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CoursePageController.cs",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\CoursePageController.cs",
               "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\CoursePageController.cs",
@@ -161,12 +171,11 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\CoursePageController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T20:57:00.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T20:57:00.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SchoolDbContext.cs",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Models\\SchoolDbContext.cs",
               "RelativeDocumentMoniker": "SchoolDatabase\\Models\\SchoolDbContext.cs",
@@ -178,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Show.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
@@ -190,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "List.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\List.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\CoursePage\\List.cshtml",
@@ -202,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "List.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
@@ -214,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
@@ -223,18 +232,6 @@
               "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-15T20:49:59.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Program.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
-              "RelativeToolTip": "SchoolDatabase\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T21:24:05.399Z"
             },
             {
               "$type": "Document",
