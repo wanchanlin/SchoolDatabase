@@ -3,64 +3,32 @@
   "WorkspaceRootPath": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\teacherpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\teacherpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\studentpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\studentpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\models\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\models\\schooldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\teacherpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\teacherpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\studentpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\studentpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|d:\\humber college\\schooldatabase\\schooldatabase\\schooldatabase\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F17DA705-1841-4079-A5EC-8E78158A365E}|SchoolDatabase\\SchoolDatabase.csproj|solutionrelative:schooldatabase\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,192 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "SchoolDatabase\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T13:00:35.292Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeacherAPIController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherAPIController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherAPIController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwFoAAACsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:08:30.616Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T00:33:06.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeacherPageController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherPageController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherPageController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:06:16.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Program.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
-              "RelativeToolTip": "SchoolDatabase\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T21:24:05.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentAPIController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwCAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:09:41.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentPageController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentPageController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T20:57:44.778Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CoursePageController.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\CoursePageController.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\CoursePageController.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\CoursePageController.cs",
-              "RelativeToolTip": "SchoolDatabase\\Controllers\\CoursePageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T20:57:00.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SchoolDbContext.cs",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Models\\SchoolDbContext.cs",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Models\\SchoolDbContext.cs",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Models\\SchoolDbContext.cs",
-              "RelativeToolTip": "SchoolDatabase\\Models\\SchoolDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswBIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:04:56.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Show.cshtml",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
-              "RelativeToolTip": "SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T19:57:41.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\List.cshtml",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\CoursePage\\List.cshtml",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\CoursePage\\List.cshtml",
-              "RelativeToolTip": "SchoolDatabase\\Views\\CoursePage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T20:46:10.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "List.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
               "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
               "RelativeToolTip": "SchoolDatabase\\Views\\TeacherPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T21:25:25.182Z"
+              "WhenOpened": "2024-11-15T21:25:25.182Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SchoolDatabase\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T20:49:59.025Z"
+              "DocumentIndex": 4,
+              "Title": "TeacherAPIController.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherAPIController.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherAPIController.cs",
+              "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
+              "ViewState": "AgIAAJ8AAAAA/v////8VwKYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T22:57:26.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
+              "Title": "TeacherPageController.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherPageController.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Controllers\\TeacherPageController.cs",
+              "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
+              "ViewState": "AgIAABAAAAAAlZmZmZkdwBkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T23:00:32.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\New.cshtml",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\TeacherPage\\New.cshtml",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\New.cshtml",
+              "RelativeToolTip": "SchoolDatabase\\Views\\TeacherPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T21:57:21.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteConfirm.cshtml",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "RelativeToolTip": "SchoolDatabase\\Views\\TeacherPage\\DeleteConfirm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T20:29:23.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Show.cshtml",
               "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\Show.cshtml",
               "RelativeDocumentMoniker": "SchoolDatabase\\Views\\TeacherPage\\Show.cshtml",
               "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\TeacherPage\\Show.cshtml",
               "RelativeToolTip": "SchoolDatabase\\Views\\TeacherPage\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T20:41:38.928Z"
+              "WhenOpened": "2024-11-27T20:29:44.311Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\StudentPage\\Index.cshtml",
-              "RelativeDocumentMoniker": "SchoolDatabase\\Views\\StudentPage\\Index.cshtml",
-              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Views\\StudentPage\\Index.cshtml",
-              "RelativeToolTip": "SchoolDatabase\\Views\\StudentPage\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T19:58:10.788Z"
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolDatabase\\Program.cs",
+              "ToolTip": "D:\\Humber College\\SchoolDatabase\\SchoolDatabase\\SchoolDatabase\\Program.cs",
+              "RelativeToolTip": "SchoolDatabase\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T20:11:31.565Z",
+              "EditorCaption": ""
             }
           ]
         }

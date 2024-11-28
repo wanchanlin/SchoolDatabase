@@ -13,9 +13,11 @@ builder.Services.AddSwaggerGen();
 
 // Database
 builder.Services.AddScoped<SchoolDbContext>();
-// API for now, but should be added as separate Author Service
+// API for now, but should be added as separate Teacher Service
 builder.Services.AddScoped<TeacherAPIController>();
+// API for now, but should be added as separate student Service
 builder.Services.AddScoped<StudentAPIController>();
+// API for now, but should be added as separate Course Service
 builder.Services.AddScoped<CourseAPIController>();
 
 

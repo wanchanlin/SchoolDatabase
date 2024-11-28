@@ -23,19 +23,54 @@ namespace SchoolDatabase.Controllers
         public IActionResult Show(int id)
         {
             Teacher SelectedTeacher = _api.FindTeacher(id);
+            return View(SelectedTeacher);
+            ////Teacher resul;
 
-            //Teacher resul;
-
-            foreach(Teacher t in _api.ListTeachers())
-            {
-                if (t.teacherid == id)
-                    SelectedTeacher = t;
-                else View("Not found");
+            //foreach(Teacher t in _api.ListTeachers())
+            //{
+            //    if (t.teacherid == id)
+            //        SelectedTeacher = t;
+            //    else View("Not found");
 
 
-            }
+            //}
 
+            //return View(SelectedTeacher);
+        }
+        [HttpGet]
+        public IActionResult New() {
+            return View();
+        }
+        // POST: TeacherPage/New
+        [HttpPost]
+        public IActionResult Create(Teacher NewTeacher)
+        {
+            int TeacherId = _api.AddTeacher(NewTeacher);
+
+            return RedirectToAction("Show", new { id = TeacherId });
+            
+        }
+
+  
+
+        // GET : TeacherPage/DeleteConfirm/{id}
+        [HttpGet]
+        public IActionResult DeleteConfirm(int id)
+        {
+            Teacher SelectedTeacher = _api.FindTeacher(id);
             return View(SelectedTeacher);
         }
+
+        // POST: TeacherPage/Delete/{id}
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            int TeacherId = _api.DeleteConfirm(id);
+            // redirects to list action
+            return RedirectToAction("List");
+        }
+
+    
+
     }
 }
