@@ -5,15 +5,14 @@ using System;
 using MySql.Data.MySqlClient;
 
 namespace SchoolDatabase.Controllers
-{   /// <summary>
-    /// 
+{
+    /// <summary>
+    /// API controller to manage student data in the school database
     /// </summary>
-    // API controller to manage student data in the school database
     [Route("api/Student")]
     [ApiController]
     public class StudentAPIController : ControllerBase
     {
-        // Dependency injection of the database context
         private readonly SchoolDbContext _context;
 
         public StudentAPIController(SchoolDbContext context)
@@ -21,101 +20,97 @@ namespace SchoolDatabase.Controllers
             _context = context;
         }
 
+        // List all students
         [HttpGet]
         [Route(template: "ListStudents")]
         public List<Student> ListStudents()
         {
-            // Initialize an empty list to hold student data
             List<Student> Students = new List<Student>();
-
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
-                // SQL query to select all students
                 MySqlCommand Command = Connection.CreateCommand();
-                string query = "select * from students";
-
-
-                //SQL QUERY
+                string query = "SELECT * FROM students";
                 Command.CommandText = query;
                 Command.Prepare();
 
-                // Execute the query and read each student record
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-                    // Map each database column to the Student object's properties
                     while (ResultSet.Read())
                     {
-                        int Id = Convert.ToInt32(ResultSet["studentid"]);
-                        string FirstName = ResultSet["studentfname"].ToString();
-                        string LastName = ResultSet["studentlname"].ToString();
-                        string StudentNumber = ResultSet["studentnumber"].ToString();
-                        DateTime EnrollmentDate = Convert.ToDateTime(ResultSet["enroldate"]);
-                   
-
-                        // Create and populate a Student object with the data
-                        Student CurrentStudent = new Student()
+                        Students.Add(new Student
                         {
-                            studentid = Id,
-                            studentfname = FirstName,
-                            studentlname = LastName,
-                            studentnumber = StudentNumber,
-                            enroldate = EnrollmentDate
-                          
-                        };
-                        // Add the student to the list
-                        Students.Add(CurrentStudent);
+                            studentid = Convert.ToInt32(ResultSet["studentid"]),
+                            studentfname = ResultSet["studentfname"].ToString(),
+                            studentlname = ResultSet["studentlname"].ToString(),
+                            studentnumber = ResultSet["studentnumber"].ToString(),
+                            enroldate = Convert.ToDateTime(ResultSet["enroldate"])
+                        });
                     }
                 }
             }
-            // Return the full list of students
             return Students;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+
+        // Find a specific student by ID
         [HttpGet]
         [Route(template: "FindStudent/{id}")]
         public Student FindStudent(int id)
         {
-            // Initialize an empty Student object to hold the result
             Student SelectedStudent = new Student();
-
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
-
                 MySqlCommand Command = Connection.CreateCommand();
-                Command.CommandText = "SELECT * FROM students where studentid = @id";
+                Command.CommandText = "SELECT * FROM students WHERE studentid = @id";
                 Command.Parameters.AddWithValue("@id", id);
 
-                // Open the database connection to retrieve the student by ID
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-                    while (ResultSet.Read())
+                    if (ResultSet.Read())
                     {
-                        int Id = Convert.ToInt32(ResultSet["studentid"]);
-                        string FirstName = ResultSet["studentfname"].ToString();
-                        string LastName = ResultSet["studentlname"].ToString();
-                        string StudentNumber = ResultSet["studentnumber"].ToString();
-                        DateTime EnrollmentDate = Convert.ToDateTime(ResultSet["enroldate"]);
-               
-
-                        // Assign data to the SelectedStudent object
-                        SelectedStudent.studentid = Id;
-                        SelectedStudent.studentfname = FirstName;
-                        SelectedStudent.studentlname = LastName;
-                        SelectedStudent.studentnumber = StudentNumber;
-                        SelectedStudent.enroldate = EnrollmentDate;
-                    
+                        SelectedStudent.studentid = Convert.ToInt32(ResultSet["studentid"]);
+                        SelectedStudent.studentfname = ResultSet["studentfname"].ToString();
+                        SelectedStudent.studentlname = ResultSet["studentlname"].ToString();
+                        SelectedStudent.studentnumber = ResultSet["studentnumber"].ToString();
+                        SelectedStudent.enroldate = Convert.ToDateTime(ResultSet["enroldate"]);
                     }
                 }
             }
-            // Return the found student or an empty object if not found
             return SelectedStudent;
+        }
+
+        // Add a new student
+        [HttpPost(template: "AddStudent")]
+        public int AddStudent([FromBody] Student StudentData)
+        {
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                MySqlCommand Command = Connection.CreateCommand();
+                Command.CommandText = "INSERT INTO students (studentfname, studentlname, studentnumber, enroldate) VALUES (@fname, @lname, @number, @enrolDate)";
+                Command.Parameters.AddWithValue("@fname", StudentData.studentfname);
+                Command.Parameters.AddWithValue("@lname", StudentData.studentlname);
+                Command.Parameters.AddWithValue("@number", StudentData.studentnumber);
+                Command.Parameters.AddWithValue("@enrolDate", StudentData.enroldate);
+
+                Command.ExecuteNonQuery();
+                return Convert.ToInt32(Command.LastInsertedId);
+            }
+        }
+
+        // Delete a student
+        [HttpDelete(template: "DeleteConfirm/{id}")]
+        public int DeleteConfirm(int id)
+        {
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                MySqlCommand Command = Connection.CreateCommand();
+                Command.CommandText = "DELETE FROM students WHERE studentid = @id";
+                Command.Parameters.AddWithValue("@id", id);
+                return Command.ExecuteNonQuery();
+            }
         }
     }
 }
-

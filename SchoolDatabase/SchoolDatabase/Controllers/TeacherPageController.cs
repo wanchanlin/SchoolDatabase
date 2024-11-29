@@ -43,7 +43,8 @@ namespace SchoolDatabase.Controllers
         }
         // POST: TeacherPage/New
         [HttpPost]
-        public IActionResult Create(Teacher NewTeacher)
+        //public IActionResult Create(Teacher NewTeacher)
+        public IActionResult New(Teacher NewTeacher)
         {
             int TeacherId = _api.AddTeacher(NewTeacher);
 

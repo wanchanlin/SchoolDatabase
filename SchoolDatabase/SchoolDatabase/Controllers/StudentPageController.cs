@@ -34,5 +34,36 @@ namespace SchoolDatabase.Controllers
 
             return View(SelectedStudent);
         }
+        [HttpGet]
+        public IActionResult New()
+        {
+            return View();
+        }
+
+        // POST: StudentPage/New
+        [HttpPost]
+        //public IActionResult Create(Teacher NewTeacher)
+        public IActionResult Create(Student NewStudent)
+        {
+            int StudentId = _api.AddStudent(NewStudent);
+
+            return RedirectToAction("Show", new { id = StudentId });
+
+        }
+        [HttpGet]
+        public IActionResult DeleteConfirm(int id)
+        {
+            Student SelectedStudent = _api.FindStudent(id);
+            return View(SelectedStudent);
+        }
+
+        // POST: TeacherPage/Delete/{id}
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            int StudentId = _api.DeleteConfirm(id);
+            // redirects to list action
+            return RedirectToAction("List");
+        }
     }
 }

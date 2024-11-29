@@ -19,10 +19,22 @@
         color:#111111;
         text-decoration: none;
     }
+    .btn {
+        background-color: #e9e9ed;
+        border: 2px solid #000000;
+        text-align: center;
+        text-decoration: none;
+       
+        margin: 15px 0;
+       
+    }
+    .btn:hover{
+            background-color:#9d9da1;
+    }
 </style>
 
 <h1>Teachers</h1>
-<a style="margin-bottom:10px;" href="/TeacherPage/New">Add Teacher</a>
+<a class="btn" href="/TeacherPage/New">Add Teacher</a>
 <p>Search for a Teacher by their Hire Date</p>
 <form method="GET" action="/TeacherPage/List">
     <div>

@@ -1,20 +1,19 @@
-﻿@model IEnumerable<SchoolDatabase.Models.Course>
+﻿@model IEnumerable<SchoolDatabase.Models.Student>
 
 <style>
     body {
         background: #1111;
-
-        }
+    }
 
     .card {
-        background-color:#FFFFFF;
+        background-color: #FFFFFF;
         padding: 1em 1em;
-        margin:1em  0;
-        border-radius:.75em;
+        margin: 1em 0;
+        border-radius: .75em;
     }
 
     a {
-        color:#111111;
+        color: #111111;
         text-decoration: none;
     }
 
@@ -26,27 +25,26 @@
         margin: 15px 0;
     }
 
-        .btn:hover {
+    .btn:hover {
             background-color: #9d9da1;
-        }
-</style>
+     }
 </style>
 
-<h1>Course</h1>
-<a class="btn" href="/CoursePage/New">Add Course</a>
-<p>Search your course</p>
-<form method="GET" action="/CoursePage/List">
+<h1>Students</h1>
+<a class="btn" href="/StudentPage/New">Add Student</a>
+<p>Search your student</p>
+<form method="GET" action="/StudentPage/List">
     <div>
         <input id="searchInfo" type="text" name="SearchKey" />
         <input id="SearchBtn" type="submit" value="Search" />
     </div>
-   
+
 
 </form>
 
-@foreach (SchoolDatabase.Models.Course Course in Model)
+@foreach (SchoolDatabase.Models.Student Student in Model)
 {
     <div class="card">
-        <a href="/CoursePage/Show/@Course.courseid">@Course.coursename @Course.courseid  &#8599;</a>
+        <a href="/StudentPage/Show/@Student.studentid">@Student.studentfname @Student.studentlname &#8599;</a>
     </div>
 }

@@ -1,0 +1,14 @@
+﻿@model SchoolDatabase.Models.Student
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/StudentPage/Create/@Model.studentid">Cancel</a>
+    </nav>
+    <h2>Are you sure you want to delete @Model.studentfname @Model.studentlname?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/StudentPage/Delete/@Model.studentid">
+        <button class="btn-warning">
+            Confirm Delete
+        </button>
+    </form>
+</div>

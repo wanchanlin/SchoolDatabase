@@ -1,0 +1,26 @@
+﻿@model SchoolDatabase.Models.Student
+
+<Style>
+    body{
+        background:#1111;
+    }
+
+
+
+
+    .card{
+            background: #ffffff;
+            padding:16px;
+            border-radius:20px;
+    }
+
+
+</Style>
+<div class="card">
+    <h1>@Model.studentfname @Model.studentlname</h1>
+    <hr>
+    <a href="/StudentPage/List">Back to List</a> <a class="alert-warning" href="/StudentPage/DeleteConfirm/@Model.studentid">Delete</a>
+
+    <p>Student Number: @Model.studentnumber</p>
+    <p>Enroll Date: @Model.enroldate.ToString("yyyy-M-d")</p>
+</div>

@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Humber College\SchoolDatabase\SchoolDatabase\SchoolDatabase
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/DeleteConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxEZWxldGVDb25maXJtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/CoursePage/Show.cshtml]
@@ -42,8 +50,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/StudentPage/DeleteConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcRGVsZXRlQ29uZmlybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/StudentPage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/StudentPage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFBhZ2VcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Humber College/SchoolDatabase/SchoolDatabase/SchoolDatabase/Views/StudentPage/Show.cshtml]
