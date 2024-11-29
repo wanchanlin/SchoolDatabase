@@ -25,15 +25,15 @@ namespace SchoolDatabase.Controllers
 
             return View(SelectedCourse);
         }
-        // POST:CoursePage/New
+       
         [HttpGet]
         public IActionResult New()
         {
             return View();
         }
+        // POST:CoursePage/Create
 
         [HttpPost]
-        //public IActionResult Create(Teacher NewTeacher)
         public IActionResult Create(Course NewCourse)
         {
             int CourseId = _api.AddCourse(NewCourse);
@@ -42,14 +42,14 @@ namespace SchoolDatabase.Controllers
 
         }
 
-            [HttpGet]
+        [HttpGet]
         public IActionResult DeleteConfirm(int id)
         {
             Course SelectedCourse = _api.FindCourse(id);
             return View(SelectedCourse);
         }
 
-        // POST: TeacherPage/Delete/{id}
+        // POST:CoursePage/Delete/{id}
         [HttpPost]
         public IActionResult Delete(int id)
         {

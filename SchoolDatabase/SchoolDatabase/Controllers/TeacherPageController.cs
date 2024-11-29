@@ -24,18 +24,6 @@ namespace SchoolDatabase.Controllers
         {
             Teacher SelectedTeacher = _api.FindTeacher(id);
             return View(SelectedTeacher);
-            ////Teacher resul;
-
-            //foreach(Teacher t in _api.ListTeachers())
-            //{
-            //    if (t.teacherid == id)
-            //        SelectedTeacher = t;
-            //    else View("Not found");
-
-
-            //}
-
-            //return View(SelectedTeacher);
         }
         [HttpGet]
         public IActionResult New() {

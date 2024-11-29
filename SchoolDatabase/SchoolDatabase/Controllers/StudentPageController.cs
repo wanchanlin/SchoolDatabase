@@ -40,9 +40,8 @@ namespace SchoolDatabase.Controllers
             return View();
         }
 
-        // POST: StudentPage/New
+        // POST: StudentPage/Create
         [HttpPost]
-        //public IActionResult Create(Teacher NewTeacher)
         public IActionResult Create(Student NewStudent)
         {
             int StudentId = _api.AddStudent(NewStudent);
@@ -57,7 +56,7 @@ namespace SchoolDatabase.Controllers
             return View(SelectedStudent);
         }
 
-        // POST: TeacherPage/Delete/{id}
+        // POST: StudentPage/Delete/{id}
         [HttpPost]
         public IActionResult Delete(int id)
         {

@@ -136,24 +136,23 @@ namespace SchoolDatabase.Controllers
 
 
         /// <summary>
-        /// Adds a teacher to the database.
+        /// Adds a new teacher to the database.
         /// </summary>
-        /// <param name="TeacherData">Teacher Object</param>
+        /// <param name="TeacherData">A teacher object containing the details to insert.</param>
         /// <example>
         /// POST: api/TeacherAPI/AddTeacher
         /// Headers: Content-Type: application/json
-        /// Request Body:
+        /// Body:
         /// {
-        ///	    "teacherfname":"Christine",
-        ///	    "teacherlname":"Bittle",
-        ///	    "employeenumber":"12345",
-        ///	    "hiredate":"2023-01-01",
-        ///	    "salary":55000
+        ///     "teacherfname": "John",
+        ///     "teacherlname": "Doe",
+        ///     "employeenumber": "12345",
+        ///     "hiredate": "2024-01-01",
+        ///     "salary": 60000
         /// }
         /// </example>
-        /// <returns>
-        /// The inserted Teacher Id from the database if successful. 0 if Unsuccessful.
-        /// </returns>
+        /// <returns>The ID of the newly added teacher, or 0 if unsuccessful.</returns>
+       
         [HttpPost(template: "AddTeacher")]
         public int AddTeacher([FromBody] Teacher TeacherData)
         {
@@ -179,15 +178,13 @@ namespace SchoolDatabase.Controllers
         }
 
         /// <summary>
-        /// Deletes a teacher from the database.
+        /// Deletes a teacher from the database by ID.
         /// </summary>
-        /// <param name="TeacherId">Primary key of the teacher to delete.</param>
+        /// <param name="TeacherId">The ID of the teacher to delete.</param>
         /// <example>
-        /// DELETE: api/TeacherAPI/DeleteTeacher -> 1
+        /// DELETE: api/TeacherAPI/DeleteConfirm/{TeacherId}
         /// </example>
-        /// <returns>
-        /// Number of rows affected by the delete operation.
-        /// </returns>
+        /// <returns>The number of rows affected by the operation.</returns>
         [HttpDelete(template: "DeleteConfirm/{TeacherId}")]
         public int DeleteConfirm(int TeacherId)
         {

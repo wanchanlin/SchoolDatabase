@@ -7,7 +7,8 @@ using MySql.Data.MySqlClient;
 namespace SchoolDatabase.Controllers
 {
     /// <summary>
-    /// API controller to manage student data in the school database
+    /// API controller to manage student data in the school database.
+    /// Provides endpoints for retrieving, adding, and deleting student records.
     /// </summary>
     [Route("api/Student")]
     [ApiController]
@@ -51,8 +52,11 @@ namespace SchoolDatabase.Controllers
             }
             return Students;
         }
-
-        // Find a specific student by ID
+        /// <summary>
+        /// Retrieves details of a specific student by their ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the student to retrieve.</param>
+        /// <returns>A <see cref="Student"/> object representing the student, or null if not found.</returns>
         [HttpGet]
         [Route(template: "FindStudent/{id}")]
         public Student FindStudent(int id)
@@ -80,7 +84,21 @@ namespace SchoolDatabase.Controllers
             return SelectedStudent;
         }
 
-        // Add a new student
+        /// <summary>
+        /// Adds a new student record to the database.
+        /// </summary>
+        /// <param name="StudentData">A <see cref="Student"/> object containing the details of the new student.</param>
+        /// <example>
+        /// POST: api/Student/AddStudent
+        /// Body:
+        /// {
+        ///     "studentfname": "John",
+        ///     "studentlname": "Doe",
+        ///     "studentnumber": "S12345",
+        ///     "enroldate": "2024-01-01"
+        /// }
+        /// </example>
+        /// <returns>The ID of the newly added student, or 0 if the operation fails.</returns>
         [HttpPost(template: "AddStudent")]
         public int AddStudent([FromBody] Student StudentData)
         {
@@ -99,7 +117,14 @@ namespace SchoolDatabase.Controllers
             }
         }
 
-        // Delete a student
+        /// <summary>
+        /// Deletes a student record from the database by their ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the student to delete.</param>
+        /// <example>
+        /// DELETE: api/Student/DeleteConfirm/{id}
+        /// </example>
+        /// <returns>The number of rows affected by the delete operation.</returns>
         [HttpDelete(template: "DeleteConfirm/{id}")]
         public int DeleteConfirm(int id)
         {

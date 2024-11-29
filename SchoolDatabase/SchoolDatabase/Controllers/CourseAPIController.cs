@@ -6,7 +6,10 @@ using MySql.Data.MySqlClient;
 
 namespace SchoolDatabase.Controllers
 {
-    // API controller to manage course data in the school database
+    /// <summary>
+    /// API controller to manage course data in the school database.
+    /// Provides endpoints for listing, retrieving, adding, and deleting course records.
+    /// </summary>
     [Route("api/Course")]
     [ApiController]
     public class CourseAPIController : ControllerBase
@@ -17,7 +20,10 @@ namespace SchoolDatabase.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Retrieves a list of all courses in the database.
+        /// </summary>
+        /// <returns>A list of <see cref="Course"/> objects representing all courses.</returns>
         [HttpGet]
         [Route(template: "ListCourses")]
         public List<Course> ListCourses()
@@ -49,7 +55,12 @@ namespace SchoolDatabase.Controllers
             }
             return Courses;
         }
-
+        /// <summary>
+        /// Retrieves details of a specific course by its ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the course to retrieve.</param>
+        /// <returns>A <see cref="Course"/> object representing the course, or null if not found.</returns>
+       
         [HttpGet]
         [Route(template: "FindCourse/{id}")]
         public Course FindCourse(int id)
@@ -77,6 +88,22 @@ namespace SchoolDatabase.Controllers
             }
             return SelectedCourse;
         }
+        /// <summary>
+        /// Adds a new course record to the database.
+        /// </summary>
+        /// <param name="CourseData">A <see cref="Course"/> object containing the details of the new course.</param>
+        /// <example>
+        /// POST: api/Course/AddCourse
+        /// Body:
+        /// {
+        ///     "coursecode": "CSE101",
+        ///     "teacherid": 123,
+        ///     "startdate": "2024-01-01",
+        ///     "finishdate": "2024-06-01",
+        ///     "coursename": "Introduction to Programming"
+        /// }
+        /// </example>
+        /// <returns>The ID of the newly added course, or 0 if the operation fails.</returns>
 
         [HttpPost(template: "AddCourse")]
         public int AddCourse([FromBody] Course CourseData)
@@ -97,6 +124,14 @@ namespace SchoolDatabase.Controllers
                 return Convert.ToInt32(Command.LastInsertedId);
             }
         }
+        /// <summary>
+        /// Deletes a course record from the database by its ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the course to delete.</param>
+        /// <example>
+        /// DELETE: api/Course/DeleteCourse/{id}
+        /// </example>
+        /// <returns>The number of rows affected by the delete operation.</returns>
 
         [HttpDelete(template: "DeleteCourse/{id}")]
         public int DeleteCourse(int id)
