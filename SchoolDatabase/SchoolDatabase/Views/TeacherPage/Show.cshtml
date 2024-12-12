@@ -19,8 +19,10 @@ body{
 <div class="card">
 <h1>@Model.teacherfname @Model.teacherlname</h1>
 <hr>
-    <a href="/TeacherPage/List">Back to List</a> <a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.teacherid">Delete</a>
-<p>Empoly Number: @Model.employeenumber</p>
+    <a href="/TeacherPage/List">Back to List</a></br>
+    <a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.teacherid">Delete</a><br></br>
+    <a href="/TeacherPage/Edit/@Model.teacherid">Edit</a>
+<p>Empolyee Number: @Model.employeenumber</p>
 <p>Hire Date: @Model.hiredate.ToString("yyyy-M-d")</p>
 <p>Salary: @Model.salary.ToString()</p>
 </div>

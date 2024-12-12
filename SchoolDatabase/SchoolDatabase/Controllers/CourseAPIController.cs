@@ -60,7 +60,7 @@ namespace SchoolDatabase.Controllers
         /// </summary>
         /// <param name="id">The unique identifier of the course to retrieve.</param>
         /// <returns>A <see cref="Course"/> object representing the course, or null if not found.</returns>
-       
+
         [HttpGet]
         [Route(template: "FindCourse/{id}")]
         public Course FindCourse(int id)
@@ -145,5 +145,7 @@ namespace SchoolDatabase.Controllers
                 return Command.ExecuteNonQuery();
             }
         }
+
+        
     }
 }

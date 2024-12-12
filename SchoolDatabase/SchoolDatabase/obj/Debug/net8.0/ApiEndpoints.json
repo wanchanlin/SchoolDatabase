@@ -298,5 +298,36 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "SchoolDatabase.Controllers.TeacherAPIController",
+    "Method": "UpdatedTeacher",
+    "RelativePath": "api/Teacher/UpdatedTeacher/{TeacherId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TeacherData",
+        "Type": "SchoolDatabase.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SchoolDatabase.Models.Teacher",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
