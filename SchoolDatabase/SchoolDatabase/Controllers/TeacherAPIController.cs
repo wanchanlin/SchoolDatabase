@@ -200,7 +200,20 @@ namespace SchoolDatabase.Controllers
             }
             return 0;
         }
-
+        /// Updates the details of an existing teacher in the database.
+        /// </summary>
+        /// <param name="TeacherId">The unique identifier of the teacher to be updated.</param>
+        /// <param name="TeacherData">
+        /// An object containing the updated details of the teacher, including:
+        /// <list type="bullet">
+        /// <item><description><c>teacherfname</c> - The first name of the teacher.</description></item>
+        /// <item><description><c>teacherlname</c> - The last name of the teacher.</description></item>
+        /// <item><description><c>employeenumber</c> - The employee number of the teacher.</description></item>
+        /// <item><description><c>hiredate</c> - The hire date of the teacher.</description></item>
+        /// <item><description><c>salary</c> - The salary of the teacher.</description></item>
+        /// </list>
+        /// </param>
+        /// <returns>The updated <see cref="Teacher"/> object after changes have been 
         [HttpPut(template: "UpdatedTeacher/{TeacherId}")]
         public Teacher UpdatedTeacher(int TeacherId, [FromBody] Teacher TeacherData)
         {

@@ -75,8 +75,7 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherPageController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAwwFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T09:11:16.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T09:11:16.69Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentPageController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T09:10:57.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T09:10:57.518Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\StudentAPIController.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAgwJ4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T09:04:23.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T09:04:23.741Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\TeacherAPIController.cs",
               "ViewState": "AgIAAMMAAAAAAAAAAAAowMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T09:03:17.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T09:03:17.394Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "SchoolDatabase\\Views\\StudentPage\\Edit.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T08:49:01.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T08:49:01.809Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "SchoolDatabase\\Views\\CoursePage\\Show.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T22:23:22.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T22:23:22.757Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "SchoolDatabase\\Views\\TeacherPage\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T22:22:40.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T22:22:40.752Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "SchoolDatabase\\Views\\CoursePage\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T22:22:13.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T22:22:13.499Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "SchoolDatabase\\Controllers\\CourseAPIController.cs",
               "ViewState": "AgIAAJAAAAAAAAAAAAAnwJYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T22:02:43.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T22:02:43.597Z"
             }
           ]
         }

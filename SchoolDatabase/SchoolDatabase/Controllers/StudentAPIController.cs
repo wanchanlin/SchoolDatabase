@@ -137,6 +137,8 @@ namespace SchoolDatabase.Controllers
                 return Command.ExecuteNonQuery();
             }
         }
+
+
         [HttpPut(template: "UpdatedStudent/{StudentId}")]
         public Student UpdatedStudent(int StudentId, [FromBody] Student StudentData)
         {
