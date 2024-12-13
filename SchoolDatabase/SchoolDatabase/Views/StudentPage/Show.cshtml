@@ -19,7 +19,10 @@
 <div class="card">
     <h1>@Model.studentfname @Model.studentlname</h1>
     <hr>
-    <a href="/StudentPage/List">Back to List</a> <a class="alert-warning" href="/StudentPage/DeleteConfirm/@Model.studentid">Delete</a>
+    <a href="/StudentPage/List">Back to List</a>
+    <a class="alert-warning" href="/StudentPage/DeleteConfirm/@Model.studentid">Delete</a>
+    <a href="/StudentPage/Edit/@Model.studentid">Edit</a>
+
 
     <p>Student Number: @Model.studentnumber</p>
     <p>Enroll Date: @Model.enroldate.ToString("yyyy-M-d")</p>

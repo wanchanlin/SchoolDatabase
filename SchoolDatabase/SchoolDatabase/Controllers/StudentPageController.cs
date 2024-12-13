@@ -64,5 +64,25 @@ namespace SchoolDatabase.Controllers
             // redirects to list action
             return RedirectToAction("List");
         }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Student SelectedStudent = _api.FindStudent(id);
+            return View(SelectedStudent);
+        }
+
+        // POST: StudentPage/Update/{id}
+        [HttpPost]
+        public IActionResult Update(int id, string StudentFName, string StudentLName, string StudentNumber, DateTime EnrolDate)
+        {
+            Student UpdatedStudent = new Student();
+            UpdatedStudent.studentfname = StudentFName;
+            UpdatedStudent.studentlname = StudentLName;
+            UpdatedStudent.studentnumber = StudentNumber;
+            UpdatedStudent.enroldate = EnrolDate;
+
+            _api.UpdatedStudent(id, UpdatedStudent);
+            return RedirectToAction("Show", new { id = id });
+        }
     }
 }

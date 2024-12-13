@@ -200,6 +200,7 @@ namespace SchoolDatabase.Controllers
             }
             return 0;
         }
+
         [HttpPut(template: "UpdatedTeacher/{TeacherId}")]
         public Teacher UpdatedTeacher(int TeacherId, [FromBody] Teacher TeacherData)
         {

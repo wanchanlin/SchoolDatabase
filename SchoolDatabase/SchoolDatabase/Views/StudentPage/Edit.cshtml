@@ -1,0 +1,33 @@
+﻿@model SchoolDatabase.Models.Student
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/StudentPage/Show/@Model.studentid">Back</a>
+    </nav>
+    <h2>New Teacher</h2>
+    <form method="POST" action="/StudentPage/Update/@Model.studentid">
+        <div class="inputrow">
+            <label for="StudentFname">First Name:</label>
+            <input type="text" id="StudentFname" name="StudentFname" value="@Model.studentfname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="StudentLname">Last Name:</label>
+            <input type="text" id="StudentLname" name="StudentLname" value="@Model.studentlname" />
+        </div>
+        <div class="inputrow">
+            <label for="StudentNumber">Student Number:</label>
+            <input type="text" id="StudentNumber" name="StudentNumber" value="@Model.studentnumber" />
+        </div>
+        <div class="inputrow">
+            <label for="EnrolDate">Enrol Date:</label>
+            <div>
+                <textarea id="EnrolDate" name="EnrolDate">@Model.enroldate</textarea>
+            </div>
+        </div>
+     
+        <div class="inputrow">
+            <input type="submit" value="Update Teacher" />
+        </div>
+    </form>
+</div>

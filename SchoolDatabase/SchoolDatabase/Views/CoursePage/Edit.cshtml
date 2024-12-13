@@ -1,0 +1,39 @@
+﻿@model SchoolDatabase.Models.Course
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/CoursePage/Show/@Model.courseid">Back</a>
+    </nav>
+    <h2>New Course</h2>
+    <form method="POST" action="/CoursePage/Update/@Model.courseid">
+        <div class="inputrow">
+            <label for="CourseName">Course Name:</label>
+            <input type="text" id="CourseName" name="CourseName" value="@Model.coursename" />
+
+        </div>
+        <div class="inputrow">
+            <label for="CouerseCode">CouerseCode:</label>
+            <input type="text" id="CouerseCode" name="CouerseCode" value="@Model.coursecode" />
+        </div>
+        <div class="inputrow">
+            <label for="StartDate">Start Date:</label>
+            <input type="text" id="StartDate" name="StartDate" value="@Model.startdate" />
+        </div>
+        <div class="inputrow">
+            <label for="FinishDate">Finish Date:</label>
+            <div>
+                 <textarea id="FinishDate" name="FinishDate">@Model.finishdate</textarea>
+            </div>
+        </div>
+        <div class="inputrow">
+            <label for="TeacherId">Teacher Id:</label>
+            <div>
+                <textarea id="TeacherId" name="TeacherId">@Model.teacherid</textarea>
+            </div>
+        </div>
+ 
+        <div class="inputrow">
+            <input type="submit" value="Update Course" />
+        </div>
+    </form>
+</div>

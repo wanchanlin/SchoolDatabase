@@ -137,5 +137,25 @@ namespace SchoolDatabase.Controllers
                 return Command.ExecuteNonQuery();
             }
         }
+        [HttpPut(template: "UpdatedStudent/{StudentId}")]
+        public Student UpdatedStudent(int StudentId, [FromBody] Student StudentData)
+        {
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                MySqlCommand Command = Connection.CreateCommand();
+
+                Command.CommandText = "update students set studentfname=@studentfname, studentlname=@studentlname, studentnumber=@studentnumber, enroldate=@enroldate where studentid=@id";
+                Command.Parameters.AddWithValue("@studentfname", StudentData.studentfname);
+                Command.Parameters.AddWithValue("@studentlname", StudentData.studentlname);
+                Command.Parameters.AddWithValue("@studentnumber", StudentData.studentnumber);
+                Command.Parameters.AddWithValue("@enroldate", StudentData.enroldate);
+                Command.Parameters.AddWithValue("@id", StudentId);
+
+                Command.ExecuteNonQuery();
+            }
+
+            return FindStudent(StudentId);
+        }
     }
 }

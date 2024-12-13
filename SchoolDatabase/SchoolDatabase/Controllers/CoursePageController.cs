@@ -25,7 +25,7 @@ namespace SchoolDatabase.Controllers
 
             return View(SelectedCourse);
         }
-       
+
         [HttpGet]
         public IActionResult New()
         {
@@ -56,6 +56,33 @@ namespace SchoolDatabase.Controllers
             int CourseId = _api.DeleteCourse(id);
             // redirects to list action
             return RedirectToAction("List");
+        }
+
+       
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Course SelectedCourse = _api.FindCourse(id);
+            return View(SelectedCourse);
+        }
+
+        // POST: CoursePage/Update/{id}
+        [HttpPost]
+        public IActionResult Update(int id, string CourseName, string CourseCode, DateTime StartDate, DateTime FinishDate, int TeacherId, int CourseId)
+        {
+            Course UpdatedCourse = new Course();
+            UpdatedCourse.coursename = CourseName;
+            UpdatedCourse.coursecode = CourseCode;
+            UpdatedCourse.startdate = StartDate;
+            UpdatedCourse.finishdate = FinishDate;
+            UpdatedCourse.teacherid = TeacherId;
+            UpdatedCourse.courseid = CourseId;
+
+
+
+
+            _api.UpdatedCourse(id, UpdatedCourse);
+            return RedirectToAction("Show", new { id = id });
         }
 
     }

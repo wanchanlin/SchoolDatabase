@@ -146,6 +146,29 @@ namespace SchoolDatabase.Controllers
             }
         }
 
-        
+        [HttpPut(template: "UpdatedCourse/{CourseId}")]
+        public Course UpdatedCourse(int CourseId, [FromBody] Course CourseData)
+        {
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                MySqlCommand Command = Connection.CreateCommand();
+
+                Command.CommandText = "update courses set coursename=@coursename, coursecode=@coursecode, startdate=@startdate, finishdate=@finishdate, teacherid=@teacherid where courseid=@id";
+                Command.Parameters.AddWithValue("@coursename", CourseData.coursename);
+                Command.Parameters.AddWithValue("@coursecode", CourseData.coursecode);
+                Command.Parameters.AddWithValue("@startdate", CourseData.startdate);
+                Command.Parameters.AddWithValue("@finishdate", CourseData.finishdate);
+                Command.Parameters.AddWithValue("@teacherid", CourseData.teacherid);
+                Command.Parameters.AddWithValue("@id", CourseId);
+
+                Command.ExecuteNonQuery();
+            }
+
+            return FindCourse(CourseId);
+        }
+
+
+
     }
 }

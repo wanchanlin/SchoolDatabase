@@ -19,8 +19,10 @@
 <div class="card">
     <h1>@Model.coursename @Model.coursecode</h1>
     <hr>
-    <a href="/CoursePage/List">Back to List</a> <a class="alert-warning" href="/CoursePage/DeleteConfirm/@Model.courseid">Delete</a>
-    <p>Teacher ID: @Model.teacherid.ToString()</p>
+    <a href="/CoursePage/List">Back to List</a> 
+    <a class="alert-warning" href="/CoursePage/DeleteConfirm/@Model.courseid">Delete</a>
+    <a href="/CoursePage/Edit/@Model.courseid">Edit</a>
+    <p>Teacher ID: @Model.courseid.ToString()</p>
     <p>Start Date: @Model.startdate.ToString("yyyy-M-d")</p>
     <p>Finish Date: @Model.finishdate.ToString("yyyy-M-d")</p>
 </div>
